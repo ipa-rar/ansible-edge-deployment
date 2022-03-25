@@ -1,6 +1,6 @@
 ---
 
-- hosts: all
+- hosts: node*
   tasks:
 
   - name: pull docker image community
@@ -29,3 +29,13 @@
         - /dev/ttyUSB0
       cleanup: yes
       auto_remove: yes
+
+- hosts: localhost
+  connection: local
+  tasks:
+
+  - name: run main docker compose on nuc
+    community.docker.docker_compose:
+      project_src: ~/THMHO/docker
+    register: output
+
