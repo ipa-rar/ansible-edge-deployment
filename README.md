@@ -1,4 +1,4 @@
-# Continuous Deployment pipeline for Better Factory
+# Continuous Deployment pipeline for Temporal Heat Map of Human Occupancy(THMHO: BetterFactory) 
 
  An automated pipeline for rolling deployment for a network of 2D lidar system using Red Hat Ansible automation tool.  
 
